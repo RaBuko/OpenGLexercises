@@ -1,0 +1,8 @@
+1. Dla VS doinstalowujemy NuGet, (Vs 2017 ma ju¿ wgranego Nugeta lecz w wersji konsolowej)
+2. Otwórz swój projekt
+3. Tools-> NuGet Package Manager -> Package Manager Console
+4. W konsolê wpisujemy "Install-Package nupengl.core -Version 0.1.0.1"
+5. Nastêpnie musimy dokonaæ pewnych zmian w funkcji main, funkcja musi przyjmowaæ parametry : 
+		void main(int argc, char* argv[])
+6. Przed wywo³aniem funkcju "glutCreateWindow("napis")", ma siê znajdowaæ funkcj:
+	glutInit( &argc, argv);
